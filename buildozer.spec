@@ -22,7 +22,7 @@ source.include_patterns = assets/*,images/*,fonts/*,users.db
 version = 0.1
 
 # (list) Application requirements - DO NOT use "sqlite3" here
-requirements = python3,kivy,kivymd,pillow,plyer,android
+requirements = python3,kivy,kivymd,pillow,plyer,android, pygithub, requests
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
