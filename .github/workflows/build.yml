@@ -28,6 +28,7 @@ jobs:
 
     - name: Build APK
       run: |
+        sleep 30  # Add a delay before this step
         buildozer -v android debug
 
     - name: Upload APK
