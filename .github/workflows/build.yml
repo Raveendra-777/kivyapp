@@ -27,7 +27,6 @@ jobs:
         export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
         yes | sdkmanager --licenses
         sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"
-        sudo apt-get install -y aidl
         python -m pip install --upgrade pip
         pip install buildozer cython
 
