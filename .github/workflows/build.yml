@@ -18,12 +18,12 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y openjdk-8-jdk
+        sudo apt-get install -y openjdk-11-jdk unzip wget
         wget https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip
-        unzip commandlinetools-linux-6609375_latest.zip -d cmdline-tools
-        sudo mkdir -p /usr/lib/android-sdk/cmdline-tools
-        sudo mv cmdline-tools /usr/lib/android-sdk/cmdline-tools/latest
-        export ANDROID_HOME=/usr/lib/android-sdk
+        unzip -o commandlinetools-linux-6609375_latest.zip -d $HOME/cmdline-tools
+        mkdir -p $HOME/android-sdk/cmdline-tools
+        mv $HOME/cmdline-tools $HOME/android-sdk/cmdline-tools/latest
+        export ANDROID_HOME=$HOME/android-sdk
         export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
         yes | sdkmanager --licenses
         sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"
