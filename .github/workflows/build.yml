@@ -22,7 +22,7 @@ jobs:
 
     - name: Initialize Buildozer
       run: |
-        buildozer init
+        if [ ! -f buildozer.spec ]; then buildozer init; fi
 
     - name: Build APK
       run: |
