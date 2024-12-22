@@ -15,6 +15,9 @@ source.include_exts = py,png,jpg,kv,atlas
 # (list) Source files to include (let empty to include all the files)
 source.include_patterns = assets/*,data/*
 
+# (str) Source directory
+source.dir = .
+
 # (str) Application versioning (method 1)
 version = 0.1
 
@@ -87,76 +90,4 @@ android.logcat_filters = *:S python:D
 #android.screens = normal,large,xlarge
 
 # (str) Presplash of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
-#android.presplash_color = #FFFFFF
-
-# (str) Presplash image of the application
 #android.presplash_color = #FFFFFF
