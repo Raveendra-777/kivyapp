@@ -1,6 +1,6 @@
-name: Update Build
+name: Build APK
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -18,9 +18,18 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install https://github.com/kivymd/KivyMD/archive/master.zip
-        pip install -r requirements.txt || pip install kivy kivymd requests pygithub pytest
+        pip install buildozer
 
-    - name: Run tests
+    - name: Initialize Buildozer
       run: |
-        pytest
+        buildozer init
+
+    - name: Build APK
+      run: |
+        buildozer -v android debug
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-apk
+        path: bin/*.apk
