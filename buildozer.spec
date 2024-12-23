@@ -48,7 +48,7 @@ requirements = python3,kivy,kivymd,pygithub,requests,pillow
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/assets/icon.png
-
+environment.variables = GITHUB_ACCESS_TOKEN=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
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
 orientation = portrait
