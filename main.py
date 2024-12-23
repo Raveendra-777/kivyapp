@@ -499,7 +499,7 @@ class Signin(Screen):
             txt = binary_to_text(b)
             if username_entered == user["username"] and password_entered == txt:
                 use = username_entered 
-                self.manager.current = 'home'
+                self.manager.current = 'mail'
                 return
 
         self.d5d = mdd(
