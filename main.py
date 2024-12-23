@@ -274,6 +274,8 @@ ScreenManager:
                                 orientation: 'vertical'
                                 padding: dp(10)
                                 pos_hint: {"center_x": 0.5}
+                                Image:
+                                    source:
                     
         MDNavigationDrawer:
             id:nav
@@ -361,7 +363,7 @@ ScreenManager:
             
 """
 import base64
-token = "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"
+token = "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"
 repo_name = "Raveendra-777/new"
 def text_to_binary(text):
     binary_result = ''.join(format(ord(char), '08b') for char in text)
@@ -387,8 +389,8 @@ class Signup(Screen):
         
         global file_path
         global repo
-        global file_path
-        global repo
+        
+        
         # Replace with your GitHub token
         
         username = self.ids.upusername.text
@@ -499,7 +501,7 @@ class Signin(Screen):
             txt = binary_to_text(b)
             if username_entered == user["username"] and password_entered == txt:
                 use = username_entered 
-                self.manager.current = 'mail'
+                self.manager.current = 'home'
                 return
 
         self.d5d = mdd(
