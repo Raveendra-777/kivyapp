@@ -25,3 +25,5 @@ android.archs = arm64-v8a, armeabi-v7a
 android.allow_backup = True
 android.debug_artifact = apk
 android.release_artifact = aab
+
+# Remove any conflicting settings or old cached configurations before building
