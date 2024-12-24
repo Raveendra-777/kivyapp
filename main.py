@@ -366,7 +366,7 @@ ScreenManager:
 import base64
 import os
 
-token = os.getenv("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")
+token = "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"
 
 repo_name = "Raveendra-777/new"
 def text_to_binary(text):
