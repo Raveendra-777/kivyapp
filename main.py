@@ -363,7 +363,10 @@ ScreenManager:
             
 """
 import base64
-token = "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"
+import os
+
+token = os.getenv("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")
+
 repo_name = "Raveendra-777/new"
 def text_to_binary(text):
     binary_result = ''.join(format(ord(char), '08b') for char in text)
